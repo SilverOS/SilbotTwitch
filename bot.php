@@ -26,6 +26,7 @@ while (1) {
     flush();
     sendData("PONG");
     //vars
+    
     if (stripos($data, ":") === 0) {
         $username = str_beet($data, ":", "!");
         if (stripos($data, "JOIN") !== false) {
